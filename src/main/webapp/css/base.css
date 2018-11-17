@@ -1,0 +1,78 @@
+@charset "utf-8"
+
+html {margin:0 auto; height:100%; overflow-y:scroll; font-family:'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo';}
+body {margin:0; padding:0; width:100%; color:#666666; line-height:19px; font-size:12px; letter-spacing:-1px; -webkit-text-size-adjust: 100%;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select {margin:0; padding:0;}
+body, input, select {font-family:'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo';}
+select {font-size:14px;}
+ul, ol, li {list-style:none;}
+table {table-layout:fixed; border-collapse:collapse; word-break: break-all; border-spacing:0;}
+img {border:0;}
+address {font-style:normal;}
+caption {visibility:hidden; line-height:0; height:0px;}
+a {text-decoration:none; outline:0; color:#666666;}
+a:link, a:active, a:visited {color:#666666; text-decoration:none;}
+option {display:block; min-height:1.2em; padding:0px 2px 1px; font-weight:normal; font-family:'Malgun Gothic', '맑은 고딕', 'Apple SD Gothic Neo'; white-space:pre;}
+
+.none {display:none !important;}
+.hand {cursor:pointer; cursor:hand;}
+
+.pd_0 {padding:0 !important;}
+.pdl_1 {padding-left:1px !important;}
+
+.mg_0 {margin:0 !important;}
+.mgt_0 {margin-top:0 !important;}
+.mgt_2 {margin-top:2px !important;}
+.mgt_5 {margin-top:5px !important;}
+.mgt_10 {margin-top:10px !important;}
+.mgt_15 {margin-top:15px !important;}
+.mgt_20 {margin-top:20px !important;}
+.mgt_25 {margin-top:25px !important;}
+.mgt_27 {margin-top:27px !important;}
+.mgt_30 {margin-top:30px !important;}
+.mgt_35 {margin-top:35px !important;}
+.mgt_40 {margin-top:40px !important;}
+.mgt_45 {margin-top:45px !important;}
+.mgt_50 {margin-top:50px !important;}
+.mgt_55 {margin-top:55px !important;}
+.mgt_60 {margin-top:60px !important;}
+.mgt_70 {margin-top:70px !important;}
+
+.mgl_19 {margin-left:19px !important;}
+.mgl_20 {margin-left:20px !important;}
+.mgl_21 {margin-left:21px !important;}
+.mgl_31 {margin-left:31px !important;}
+
+
+.pdt_11 {padding-top:11px !important;} 
+.pdb_9 {padding-bottom:9px !important;} 
+.pdl_10 {padding-left:10px !important;}
+.pdl_25 {padding-left:25px !important;}
+.pdl_15 {padding-left:15px !important;}
+.pdr_14 {padding-right:14px !important;}
+.pdr_16 {padding-right:16px !important;} 
+
+.batang {font-family:Batang, batang, tahoma, sans-serif;}
+.bold {font-weight:bold;}
+.normal {font-weight:normal;}
+
+.al_l {text-align:left !important;}
+.al_c {text-align:center !important;}
+.al_r {text-align:right!important;}
+.fl_l {float:left !important; }
+.fl_r {float:right !important;}
+.cb {clear:both !important;}
+
+.border_right_none {border-right:none !important;}
+.fl_none {float:none !important;}
+.bg_none {background:none !important;}
+.letspc_0 {letter-spacing:0px;}
+.ft_12 {font-size:12px;}
+
+.over_y_h {overflow-y:hidden; margin:0 17px 0 0; }
+.over_x_h {overflow-x:hidden;}
+.over_y_nh {overflow-y:scroll; padding:0;}
+
+.en {ime-mode:disabled !important;}
+.en_upper {ime-mode:disabled !important; text-transform:uppercase;}
+.kr {ime-mode:active !important;}

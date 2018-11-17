@@ -1,0 +1,53 @@
+
+h2 {/*color:#f44336;*/}
+
+#wrap {width:950px; margin:0 auto; position:relative;}
+
+#header {width:100%; padding-top:30px; height:50px;}
+#header h1 {font-size:40px; width:300px;}
+#header .logo {color:#2196F3 !important;}
+
+#header li {width:150px; display:inline-block; float:left; text-align:center;}
+#header li a {height:48px; padding:32px 0 20px 0; font-size:20px; font-weight:bold; color:#141414;}
+#header li a:hover,#header li a.on {height:45px; font-size:22px; border-bottom:5px solid #ff7f00;}
+
+#container {font-size:20px; padding:50px; border:1px solid #e0e0e0;}
+
+/*
+#container #left {width:200px;}
+#container #left h2 {text-align:center; height:50px; padding-top:15px; font-size:20px; color:#141414; line-height:30px; border:1px solid #e0e0e0;}
+#container #left ul {border:1px solid #e0e0e0; border-bottom:none; margin-top:20px;}
+#container #left li {height:42px; border-bottom:1px solid #e0e0e0;}
+#container #left a {line-height:40px; font-size:15px; height:42px; color:#000; font-weight:bold;}
+
+#container #right {width:730px; line-height:600px; border:1px solid #e0e0e0;}
+*/
+
+
+#container input[type=text], #container input[type=password], #container textarea {width:100%; padding:12px 20px; margin:8px 0; display:inline-block; border:1px solid #ccc; box-sizing:border-box;}
+#container button {background-color:#4CAF50; color:white; padding:14px 20px; margin:8px 0; border:none; cursor:pointer; width:100%;}
+#container button:hover {opacity:0.8;}
+#container .orange-btn {width:auto; padding:10px 18px; background-color:#f44336;}
+
+#container table.board {border-collapse:collapse; border-spacing:0; width:100%; border:1px solid #ddd;}
+#container .board th, td {padding:16px;}
+#container .board tr:nth-child(even) {background-color:#f2f2f2}
+
+#container .pagination {display:inline-block;}
+#container .pagination a {color:black; float:left; padding:8px 16px; text-decoration:none; border:1px solid #ddd; margin:0 4px;}
+#container .pagination a.active {background-color:#4CAF50; color:white; border:1px solid #4CAF50;}
+#container .pagination a:hover:not(.active) {background-color:#ddd;}
+
+#container .modal {display:none; position:fixed; z-index:1; left:0; top:0; width:100%; height:100%; overflow:auto; background-color:rgb(0,0,0); background-color:rgba(0,0,0,0.4); padding-top:60px;}
+#container .modal-content {background-color:#fefefe;margin:5% auto 15% auto; border:1px solid #888; width:800px;}
+#container .close {position:absolute; right:25px; top:0; color:#000; font-size:35px; font-weight:bold;}
+#container .close:hover, #container .close:focus {color:red; cursor:pointer;}
+#container .animate {-webkit-animation:animatezoom 0.6s; animation:animatezoom 0.6s}
+@-webkit-keyframes animatezoom {from {-webkit-transform:scale(0)} to {-webkit-transform:scale(1)}}
+@keyframes animatezoom {from {transform:scale(0)} to {transform:scale(1)}}
+
+
+#writeForm td {padding-top:0;padding-bottom:0;}
+
+#footer {padding-top:20px;}
+#footer p {font-size:12px; line-height:13px; letter-spacing:0px;}
