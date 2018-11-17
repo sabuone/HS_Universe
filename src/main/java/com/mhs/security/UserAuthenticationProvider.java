@@ -46,16 +46,16 @@ public class UserAuthenticationProvider implements AuthenticationProvider {
 					user = new UserDetail(vo);
 					authorities = user.getAuthorities();
 				} else
-					throw new BadCredentialsException("패스워드 X");
+					throw new BadCredentialsException("");
 			} else {
-				throw new UsernameNotFoundException("아이디 X");
+				throw new UsernameNotFoundException("");
 			}
-		} catch (UsernameNotFoundException e) {
+		} catch (UsernameNotFoundException | NullPointerException e) {
 			logger.info(e.toString());
-			throw new UsernameNotFoundException(e.getMessage());
+			throw new UsernameNotFoundException("아이디 X");
 		} catch (BadCredentialsException e) {
 			logger.info(e.toString());
-			throw new BadCredentialsException(e.getMessage());
+			throw new BadCredentialsException("패스워드 X");
 		} catch (Exception e) {
 			logger.info(e.toString());
 			throw new RuntimeException(e.getMessage());
