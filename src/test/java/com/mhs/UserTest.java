@@ -6,8 +6,8 @@ import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -15,15 +15,25 @@ import com.mhs.service.UserService;
 import com.mhs.vo.UserVO;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations={"classpath:spring/*.xml"})
+@ContextConfiguration(locations = { "classpath:spring/*.xml" })
 public class UserTest {
 
 	@Autowired
 	UserService userService;
-	
+
 	@Autowired
 	PasswordEncoder passwordEncoder;
-	
+
+	@Test
+	@Rollback(false)
+	public void transactionTest() {
+		UserVO user = new UserVO();
+		user.setUserId("admin2");
+		user.setUserPassword(passwordEncoder.encode("admin20"));
+		user.setUserName("관리자");
+		userService.insertUser(user);
+	}
+
 	@Test
 	@Ignore
 	public void insertUser() {
@@ -33,19 +43,19 @@ public class UserTest {
 		user.setUserName("관리자");
 		userService.insertUser(user);
 	}
-	
+
 	@Test
 	@Ignore
 	public void checkUser() {
 		UserVO user = userService.selectOneUser("test4");
-		
+
 		if (passwordEncoder.matches("1231", user.getUserPassword())) {
 			System.out.println(true);
 		} else {
 			System.out.println(false);
 		}
 	}
-	
+
 	@Test
 	@Ignore
 	public void updateUser() {
@@ -55,13 +65,13 @@ public class UserTest {
 		user.setRole("ADMIN");
 		userService.updateUser(user);
 	}
-	
+
 	@Test
 	@Ignore
 	public void deleteUser() {
 		userService.deleteUser("test3");
 	}
-	
+
 	@Test
 	@Ignore
 	public void selectOneUser() {
